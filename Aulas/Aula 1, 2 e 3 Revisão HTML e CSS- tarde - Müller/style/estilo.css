@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@author "Müller Gonçalves";
+
+body{
+	background-color: #ADD8E6;
+}
+
+*{
+	font-family: verdana;
+}
+
+.principal {
+	text-align: center;
+	font-size: 22pt;
+	font-family: cooper, arial, verdana;
+	color: #F8F8FF;
+	text-decoration: underline;
+	text-shadow: 3px 2px 2px black;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+	text-shadow: 2px 2px 4px grey;
+}
+
+a:visited {
+	color: grey;
+	
+}
+
+a:hover {
+	letter-spacing: 2px;
+}
+
+.fonte1 {
+	font-family: arial;
+}
+
+.fonte2 {
+	font-family: verdana;
+}
+
+.fonte3 {
+	font-family: comic sans ms;
+}
+
+.tamanho1 {
+	font-size: 10px;
+}
+
+.tamanho2 {
+	font-size: 10pt;
+}
+
+.tamanho3 {
+	font-size: 1em;
+}
+
+.efeito1 {
+	text-decoration: underline;
+}
+
+.efeito2 {
+	text-shadow: 2px 2px 4px black;
+}
+
+.efeito3 {
+	font-weight: bold;
+}
+
+.efeito4 {
+	font-style: italic;
+}
+
+.efeito5 {
+	font-variant: small-caps;
+}
+
+.paragrafo1 {
+	text-align: center;
+	font-style: oblique;
+	margin: 20px;
+}
+
+.paragrafo2 {
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 1.5;
+	margin: 10px 20px;
+	border: 4px groove cyan;
+	padding: 10px;
+	background-color: lightyellow;
+	text-shadow: 1px 1px 2px gray;
+}
+
+.paragrafo3 {
+	text-align: right;
+	margin: 10px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.paragrafo4 {
+	text-align: left;
+	font-style: italic;
+	text-indent: 25px;
+	line-height: 1.5;
+}
+
+.lista1 {
+	list-style-type: square;
+	/*Exemplo de lista com imagem:
+	list-style-image: url("../images/foto.jpg");
+	list-style-position: inside;*/
+}
+
+.lista2 {
+	list-style-type: upper-alpha;
+}
+
+.lista3 {
+	list-style-type: none;
+}
+
+.lista3 li {
+	display: inline;
+	padding: 10px;
+}
+
+.div1, .div1 img {
+	width: 300px;
+}
+
+.div1 {
+	float: left;
+	margin: 5px;
+	padding: 5px;
+}
+
+.div1 + p {
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 2;
+	font-weight: bold;
+}
+
+.div2, .div2 img {
+	width: 200px;
+}
+
+.div2 {
+	margin: 0 auto;
+}
+
+table, tr, th, td {
+	border: 1px solid grey; 
+	border-spacing: 0;
+	margin: 0 auto;
+	background-color: white;
+}
+
+tr, td, th{
+	width: 100px;
+	height: 40px;
+}
+
+table {
+	border: 4px groove blue;
+}
+
+.fundoespecial {
+		background-image: url(../images/background.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+}

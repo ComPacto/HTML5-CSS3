@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@author "Müller Gonçalves";
+
+body {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: justify;
+}
+
+#geral {
+	margin: auto;
+	width: 800px;
+}
+
+.topo {
+	background-image: url(../images/header.png);
+	height: 200px;
+	background-position: center;
+	background-size: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.cssmenu {
+	background-color: black;
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+article {
+	background-color: white;
+	width: 320px;
+	float: right;
+	height: 640px;
+	margin-top: 10px;
+	border-radius: 0 10px 0 0;
+}
+
+aside {
+	background-color: white;
+	width: 480px;
+	float: left;
+	height: 640px;
+	margin-top: 10px;
+	border-radius: 10px 0 0 0;
+}
+
+.cssmenu {
+	background-color: black;
+	width: auto;
+}
+
+.cssmenu ul {
+	list-style-type: none;
+	line-height: 1;
+	padding: 0;
+}
+
+.cssmenu ul li {
+	display: inline-block;
+	text-align: center;
+}
+
+.cssmenu ul li a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	font-size: 11pt;
+}
+
+a:hover {
+	background-color: grey;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	text-indent: 1em;
+	line-height: 1.5;
+	font-size: 10pt;
+	padding: 10px;
+}
+
+.fotos {
+	width: 300px;
+	height: 170px;
+	border-style: solid;
+	border-radius: 10px;
+}

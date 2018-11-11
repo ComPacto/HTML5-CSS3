@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Bootstrap - Framework Front-end - Bibliotecas CSS3 e JS </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Página exemplificando o uso do Bootstrap - Framework front-end com recursos CSS3 e JS">
+		<meta name="author" content="Müller Gonçalves">
+		<meta name="keywords" content="Bootstrap, Frameworks, CSS3, JS, Classes, Front-end">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/icon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<h1> Bootstrap - Framework Front-end </h1>
+		<hr>
+		<p> 
+			Bootstrap é um web framework front-end de código-fonte aberto para a concepção de websites e aplicações web. Ele contém HTML e CSS baseado em modelos de design para a tipografia, formulários, botões de navegação e outros componentes de interface, bem como extensões JavaScript opcionais. Ao contrário de muitos frameworks web, ele é focado no desenvolvimento de front-end . O Bootstrap é o segundo projeto mais bem avaliado no GitHub, com mais de 111.600 estrelas e 51.500 forks.
+		</p>
+		<p>
+			Bootstrap, originalmente chamado Twitter Blueprint, foi desenvolvido por Mark Otto e Jacó Thornton no Twitter como um instrumento para incentivar a consistência através de ferramentas internas. Antes de Bootstrap, várias bibliotecas foram utilizados para o desenvolvimento de interfaces, o que levou a inconsistências e um elevado peso de manutenção. De acordo com o desenvolvedor Mark Otto:
+		</p>
+		<p>
+			"Um grupo super pequeno de desenvolvedores e eu nos reunimos para projetar e construir uma nova ferramenta interna e vi uma oportunidade de fazer algo mais. Através desse processo, nós nos vimos construindo algo muito mais substancial do que outra ferramenta interna. Meses depois, terminamos com uma versão inicial do Bootstrap como forma de documentar e compartilhar padrões comuns de design e ativos dentro da empresa "
+		</p>
+		<hr>
+		<strong> Exemplos: </strong>
+		<ins>
+			&lt;button type="button"> Botão &lt;/button>
+		</ins>
+		<br> ou <br>
+		<ins>
+			&lt;input type="button" value="Botão">
+		</ins>
+		<hr>
+		<h2> Trabalhando com Botões no Bootstrap </h2>
+		<div style="margin-bottom:30px">
+			<button type="button"> Padrão </button>
+			<button type="button" class="btn btn-default"> Default </button>
+			<button type="button" class="btn btn-primary"> Primário </button>
+			<button type="button" class="btn btn-success"> Sucesso </button>
+			<button type="button" class="btn btn-info"> Informação </button>
+			<button type="button" class="btn btn-warning"> Aviso </button>
+			<button type="button" class="btn btn-danger"> Alerta </button>
+			<button type="button" class="btn btn-inverse"> Inverso </button>
+			<button type="button" class="btn btn-link"> Link </button>
+		</div>
+		<hr>
+		<h2> Botões Agrupados: </h2>
+		<div style="margin-bottom:30px" class="btn btn-group">
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-home"></span> Página Inicial </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-briefcase"></span> Empresa </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-picture"></span> Galeria </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-earphone"></span> Contato </button>
+		</div>
+		<hr>
+		<h2> Botões Agrupados (vertical): </h2>
+		<div style="margin-bottom:30px" class="btn btn-group-vertical">
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-home"></span> Página Inicial </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-briefcase"></span> Empresa </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-picture"></span> Galeria </button>
+			<button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-earphone"></span> Contato </button>
+		</div>
+		<hr>
+		<h2> Exemplo 01 - Menu: </h2>
+		<nav style="margin-bottom:30px">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span> Página Inicial </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Empresa </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Galeria </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contato </a></li>
+			</ul>
+		</nav>
+		<br><br>
+		<hr>
+		<h2> Exemplo 02 - (Barra de Menu) </h2>
+		<nav style="margin-bottom:30px" class="navbar navbar-inverse">
+			<ul class="nav navbar-nav container-fluid">
+				<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Página Inicial </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Empresa </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Galeria </a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contato </a></li>
+			</ul>
+		</nav>
+		<br>
+		<hr>
+		<h2> Imagem Responsiva: </h2>
+		<div class="media">
+			<img class="img-responsive" src="images/foto.png" alt="Foto do logo do Bootstrap">
+		</div>
+		<hr>
+		<h2> Imagem Circular: </h2>
+		<div class="media">
+			<img class="img-circle img-responsive" src="images/boots.jpg" alt="Foto do logo do Bootstrap">
+		</div>
+		<hr>
+		<h2> Imagem Circular: </h2>
+		<div class="media">
+			<img class="img-thumbnail img-responsive" src="images/boots.jpg" alt="Foto do logo do Bootstrap">
+		</div>
+		<hr>
+		<h2> Vídeo do YouTube - Compartilhar - Incorporar: </h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/8sU-IVaQYgk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<hr>
+		<h2> Mapas do Google - Compartilhar - Incorporar: </h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.753083983922!2d-51.15332235194119!3d-30.00992882063265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519770bf819649f%3A0x627245710ea51ad6!2sQI+-+Escolas+e+Faculdades!5e0!3m2!1spt-BR!2sbr!4v1519326184807" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<hr>	
+	</body>
+</html>

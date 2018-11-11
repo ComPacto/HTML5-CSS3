@@ -1,0 +1,53 @@
+﻿@charset "UTF-8";
+@author "Müller Gonçalves";
+
+* {
+	font-family: verdana;
+}
+
+body {
+	background-color: silver;
+}
+
+legend {
+	text-align: center;
+}
+
+.maior {
+	margin: 0 auto;
+	width: 80%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px gray;
+}
+
+.menor {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px gray;
+}
+
+.titulo {
+	font-size: 18px;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+legend {
+	text-shadow: 1px 1px 2px gray;
+}
+
+input, select, textarea {
+	margin: 5px;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus{
+	background-color: magenta;
+}
+
+input:hover, select:hover, textarea:hover {
+	border: 1px solid pink;
+}
+

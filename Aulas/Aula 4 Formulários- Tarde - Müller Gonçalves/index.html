@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Formulário - Campos de entrada de dados para banco ou e-mails </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Aula de formulário - campo de entrada - input - select">
+		<meta name="author" content="Aline Zenker">
+		<meta name="keyword" content="Formulário, input, select, textarea, label, fieldset">
+		<link rel="icon" href="images/icon.png">
+		<link rel="stylesheet" type="text/css" href="style/estilo.css">
+	</head>	
+	<body>
+		<form method="post" name="form1" action="">
+			<fieldset class="maior">
+				<legend class="titulo"> Formulário </legend>
+				<fieldset class="menor">
+					<legend> Dados Pessoais </legend>
+					<label> Nome: </label>
+					<input type="text" name="nome" size="30" required="required" placeholder="Digite aqui">
+					<br>
+					<label> Data de Nascimento: </label>
+					<input type="date" name="nascimento" required="required">
+					<br>
+					<label> Endereço: </label>
+					<input type="text" name="endereço" size="40" required="required">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label> Nº Residencial: </label>
+					<input type="text" name="numero" size="8" required="required">
+					<br>
+					<label> Cidade: </label>
+					<input type="text" name="cidade" size="20" required="required">
+					<br>
+					<label> Estado: </label>
+					<select name="estado">
+						<option value="vazio"> Selecione </option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RN">Rio Grande do Norte</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+					</select>
+					<br>
+					<label> E-mail: </label>
+					<input type="email" required="required" name="email">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label> Senha: </label>
+					<input type="password" name="senha" size="6" maxlength="6" required="required">
+					<br>
+					<label> Sexo: </label>
+					<input type="radio" name="sexo" value="f"> 
+						Feminino 
+					<input type="radio" name="sexo" value="m">
+						Masculino <br>
+					<label> Bens Pessoais </label>
+					<br>
+					<input type="checkbox" name="bens" value="Casa"> Casa <br>
+					<input type="checkbox" name="bens" value="carro"> Carro <br>
+					<input type="checkbox" name="bens" value="moto"> Motocicleta <br>
+					<input type="checkbox" name="bens" value="carro"> Bicicleta <br>
+				</fieldset>
+				<fieldset class="menor">
+					<legend> Dados Acadêmicos </legend>
+					<label> Escolaridade: </label><br>
+					<select name="escolaridade" size="3">
+						<option value="fundamental">
+							Fundamental
+						</option>
+						<option value="medio">
+							Médio
+						</option>
+						<option value="tecnico">
+							Técnico
+						</option>	
+						<option value="graduacao">
+							Graduação
+						</option>
+						<option value="pos">
+							Pós Graduação
+						</option>
+						<option value="especializacao">
+							Especialização
+						</option>
+					</select><br>
+					<label> Cursos: </label><br>
+					<textarea name="cursos" cols="30" rows="6" placeholder="Digite aqui"> </textarea>
+				</fieldset>
+				<fieldset class="menor">
+					<legend> Dados Profissionais </legend>
+						<label> Anexe seu Currículo </label>
+						<input type="file" name="curriculo">
+				</fieldset>
+				<input type="submit" name="envia" value="Enviar"> &nbsp;&nbsp;
+				<input type="reset" name="limpa" value="Limpar">
+			</fieldset>	
+		</form>
+	</body>
+</html>	

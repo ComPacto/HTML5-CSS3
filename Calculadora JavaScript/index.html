@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Calculadora </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="JavaScript - Programação Web com elementos window,document,history, location">
+		<meta name="author" content="Aline Zenker">
+		<meta name="keywords" content="JavaScript , CSS, JS, window, document, alert">		
+		<link rel="shortcut icon" href="images/calcu.png">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="js/script.js">
+		
+		</script>
+		<style type="text/css">
+			* {
+				text-align: center;
+				font-family: verdana;
+			}
+			.botao input {
+				width: 35px;
+				margin: 1px;
+				padding: 2px;
+			}
+			table {
+				margin: 0 auto;
+				border: 4px solid purple;
+				background-color: pink;
+				border-radius: 10px;
+			}
+		</style>	
+	</head>
+	<body>
+		<h1> Calculadora </h1>
+		<form name="calc">
+			<table>
+				<tr> 
+					<td> 
+						<input type="text" name="visor" size="20" style="text-align: right" disabled>
+					</td>
+				</tr>
+				<tr class="botao">
+					<td>
+						<input type="button" name="sete" value=" 7 " onclick="calc.visor.value += '7'">
+						<input type="button" name="oito" value=" 8 " onclick="calc.visor.value += '8'">
+						<input type="button" name="nove" value=" 9 " onclick="calc.visor.value += '9'">
+						<input type="button" name="div" value=" / " onclick="calc.visor.value += ' / '">
+					</td>
+				</tr>
+				<tr class="botao">
+					<td>
+						<input type="button" name="quatro" value=" 4 " onclick="calc.visor.value += '4'">
+						<input type="button" name="cinco" value=" 5 " onclick="calc.visor.value += '5'">
+						<input type="button" name="seis" value=" 6 " onclick="calc.visor.value += '6'">
+						<input type="button" name="mult" value=" * " onclick="calc.visor.value += ' * '">
+					</td>
+				</tr>
+				<tr class="botao">
+					<td>
+						<input type="button" name="um" value=" 1 " onclick="calc.visor.value += '1'">
+						<input type="button" name="dois" value=" 2 " onclick="calc.visor.value += '2'">
+						<input type="button" name="tres" value=" 3 " onclick="calc.visor.value += '3'">
+						<input type="button" name="subt" value=" - " onclick="calc.visor.value += ' - '">
+					</td>
+				</tr>
+				<tr class="botao">
+					<td>
+						<input type="button" name="ponto" value=" . " onclick="calc.visor.value += '.'">
+						<input type="button" name="zero" value=" 0 " onclick="calc.visor.value += '0'">
+						<input type="button" name="adição" value=" + " onclick="calc.visor.value += '+'">
+						<input type="button" name="igual" value=" = " onclick="calc.visor.value = eval(calc.visor.value)">
+					</td>
+				</tr>
+				<tr class="botao">
+					<td>
+						<input type="button" name="apagar" value=" C " onclick="calc.visor.value = ''" style=" width:76px">
+						<input type="button" name="apagaum" value=" &larr; " onclick="apagaUm()">
+						<input type="button" name="raiz" value="&radic;" onclick="extrairRaiz()">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>	

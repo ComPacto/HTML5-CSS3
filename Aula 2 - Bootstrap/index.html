@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Bootstrap - Framework Front-end - Bibliotecas CSS3 e JS </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Página exemplificando o uso do Bootstrap - Framework front-end com recursos CSS3 e JS">
+		<meta name="author" content="Müller Gonçalves">
+		<meta name="keywords" content="Bootstrap, Frameworks, CSS3, JS, Classes, Front-end">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/icon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) { 
+			$(".scroll").click(function(event){        
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+		   });
+		});
+	</script>
+	</head>
+	<body id="topo">
+		<header class="jumbotron text-center container-fluid">
+			<h1> TECNOLOGIA WEB - Containers </h1>
+		</header>		
+		<nav class="navbar navbar-inverse container-fluid">
+			<ul class="nav navbar-nav">
+				<li> <a href="index.html"> Home </a> </li>
+				<li> <a href="#empresa" class="scroll"> Empresa </a> </li>
+				<li> <a href="#galeria"> Galeria </a> </li>
+				<li> <a href="#contato"> Contato </a> </li>
+			</ul>
+		</nav>
+		<section class="container-fluid">			
+			<div class="row">
+				<div id="caixa01" class="col-sm-4">
+					<h2> Coluna 01 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>		
+				<div id="caixa02" class="col-sm-4">
+					<h2> Coluna 02 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>		
+				<div id="caixa03" class="col-sm-4">
+					<h2> Coluna 03 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>						
+			</div>	
+
+			<div class="row">
+				<div id="caixa04" class="col-sm-4">
+					<h2> Coluna 01 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>
+				<div id="caixa05" class="col-sm-4">
+					<h2> Coluna 02 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>
+				<div id="caixa06" class="col-sm-4">
+					<h2> Coluna 03 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>	
+			</div>
+			<div class="row">
+				<div id="caixa07" class="col-sm-6">
+					<h2> Coluna 01 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>
+				<div id="caixa08" class="col-sm-6">
+					<h2> Coluna 02 </h2>
+					<p>
+						O vídeo fornece uma maneira poderosa de ajudá-lo a provar seu argumento. Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que deseja adicionar. Você também pode digitar uma palavra-chave para pesquisar online o vídeo mais adequado ao seu documento.
+					</p>					
+				</div>						
+					
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="text-center" id="empresa"> Empresa </h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="text-center" id="galeria"> Galeria </h2>
+				</div>
+			</div>
+			<div class="row" id="contato">
+				<div class="col-sm-12">
+					<h2 class="text-center" id="contato"> Contato  </h2>
+					<form method="post" name="form1" action="">
+						<div class="form-group">
+							<label> Nome </label>
+							<input type="text" name="nome" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label> E-mail: </label>
+							<input type="email" name="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label> Mensagem: </label>
+							<textarea name="msg" cols="30" rows="6" placeholder="Digite aqui..." class="form-control"></textarea>
+							<input type="submit" name="envia" value="Enviar" class="btn btn-primary">
+							<input type="reset" name="limpa" value="Limpar" class="btn btn-primary">
+					</form>
+					<br>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13819.64156566737!2d-51.1527404!3d-30.0107293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27cd6ee10f7aed04!2sQI+Faculdade+%26+Escola+T%C3%A9cnica+%7C+Assis+Brasil+%7C+Porto+Alegre!5e0!3m2!1spt-BR!2sbr!4v1519670014455" frameborder="0" style="border:0; width: 400px; height: 320px; max-width: 100%; margin: 45px 0;"  allowfullscreen></iframe>
+						</div>
+				</div>
+			</div>
+			<a href="#topo" title="Seta que leva ao topo da página"><img id="imgtopo" src="images/topo.png" alt="Seta Topo"></a>
+		</section>
+		<footer class="container-fluid navbar-fixed-bottom">
+			<span> 
+				Todos os direitos reservados a Müller Gonçalves&copy;
+			</span>
+		</footer>
+		
+	</body>
+</html>

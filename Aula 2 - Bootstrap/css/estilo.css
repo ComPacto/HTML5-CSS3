@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@author "Müller Gonçalves";
+
+p {
+	text-align: justify;
+	text-indent: 25px;
+	padding: 5px;
+}
+
+#foto01 {
+	margin: 0 auto;
+}
+
+header {
+	margin-bottom: 0 !important;
+}
+
+footer {
+	background-color: #000;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	color: white;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+#empresa, #galeria {
+	height: 650px;
+}
+
+#imgtopo {
+	position: fixed;
+	bottom: 50px;
+	right: 2px;
+}

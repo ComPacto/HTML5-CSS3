@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> 
+		JAVASCRIPT - Iniciando a programação web </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="JavaScript - Programação Web com elementos window,document,history, location">
+		<meta name="author" content="Aline Zenker">
+		<meta name="keywords" content="JavaScript , CSS, JS, window, document, alert">
+		
+		<link rel="shortcut icon" href="images/icone.png">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript">
+			/*Escrevendo no documento: */
+			window.document.write('<h1>Olá Mundo!</h1>');
+			
+			/*Alterando a cor do fundo: 
+			window.document.bgColor = "navy";
+			
+			/*Alterando a cor do texto: 
+			document.fgColor = "white";*/
+			
+			/*Exemplo com variáveis: */
+			var nome = "Aline Zenker";
+			var idade = 34;			
+			window.alert(nome+ ' seja bem Vinda!');
+			window.alert('Você tem '+idade+ ' anos.');
+			
+			var n1 = 5;
+			var n2 = 10;
+			var resultado = n1 + n2;
+			alert(resultado);
+			
+			function darOi() {
+				window.alert('Oi');
+			}
+			
+			function colorir() {
+				document.bgColor = 'pink'
+				document.fgColor = 'red'
+			}
+			
+			function pretoBranco() {
+				document.bgColor = 'black'
+				document.fgColor = 'white'
+			}
+			
+			var caixaNome = window.prompt('Digite seu nome: ');
+			if(confirm('Visualizar seu nome?')) {
+				alert(caixaNome);
+			}else{
+				alert('OK');
+			}
+		</script>	
+	</head>
+	<body>
+		<h2> Exemplos Inline: </h2>
+		<hr>
+		
+		<h3> Botão Fechar Janela: </h3>
+		<input type="button" value="Fechar Janela" name="fecha" onclick="window.close()">
+		<hr>
+		
+		<h3> Botão dar Oi </h3>
+		<input type="button" value="Dar Oi" name="oi" onclick="darOi()">
+		<hr>
+		<h3> Botão de imprimir a página </h3>
+		<input type="button" value="Imprimir" name="imprimir" onclick="window.print();">
+		<hr>
+		<h3> Botão Colorir: </h3>
+		<input type="button" value="Colorir" name="colorir" onclick="colorir()">
+		<hr>
+		<h3> Botão Preto e Branco: </h3>
+		<input type="button" value="Preto e Branco" name="preto" onclick="pretoBranco()">
+	</body>
+</html>
+		

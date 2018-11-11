@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+@author "Müller Gonçalves";
+
+*{
+	margin: 0;
+	font-family: verdana;
+	
+}
+
+.geral	{
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+.topo {
+	width: 900px;
+	height: 260px;
+	background-image: url(../images/header.jpg);
+	border-radius: 10px 10px 0 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.esquerda,.direita {
+	width: 230px;
+	height: auto;
+	padding: 5px;
+	float: left;
+	background-color: rgba(0, 0, 0, 0.8)
+}
+
+.centro {
+	width: 390px;
+	height: auto;
+	margin: 0 10px;
+	padding: 5px;
+	float: left;
+	background-color: rgba(212, 80, 40, 0.9);
+}
+
+.rodape {
+	width: 900px;
+	height: 45px;
+	clear: both;
+	float: none;
+	background-color: white;
+	text-align: center;
+	color: black;
+	line-height: 40px;
+	line-height: 40px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 1.5;
+	font-size: 10pt;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin: 10px 0;
+}	
+
+.centro img{
+	width: 380px;
+	border-radius: 10px 10px 10px 10px;
+	border-style: solid;
+}
+
+body {
+	background-color: black;
+	color: white;
+}

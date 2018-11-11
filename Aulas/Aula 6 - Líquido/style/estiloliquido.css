@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@author "Cristian Lunardi de Oliveira";
+
+
+* { 
+	margin: 0 auto; 
+	font-family: Arial; 
+	font-size: 10pt; 
+} 
+
+p { 
+	text-align: justify; 
+	text-indent: 25px; 
+	line-height: 1.5; 
+	font-size: 0.83em;
+} 
+
+h1 { 
+	text-align: center; 
+	color: navy; 
+	text-shadow: 2px 2px 2px gray; 
+	margin: 1.5em;
+}
+
+.geral { 
+	margin: 0 auto; 
+	height: auto; 
+	width: 100%; 
+}
+
+.topo { 
+	height: 300px; 
+	width: 100%; 
+	background-image: url(../images/header.jpg);
+	background-position: center; 
+}
+
+.esquerda,.direita { 
+	background-color: rgba(18,44,0,0.3); 
+	float: left; 
+	width: 25.5556%; 
+	height: auto; 
+	padding:0.5556%;
+}
+
+.centro { 
+	width: 43.333%; 
+	height: auto; 
+	margin: 0 1.111%; 
+	padding: 0.5556%; 
+	float: left; 
+	background-color: rgba(255,255,109,0.2);
+} 
+
+.centro img { 
+	width: 60%; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	border-radius: 10px;
+	min-width: 100%;
+	max-width: 70%;
+}
+
+@media screen and (max-width: 900px) {
+	.esquerda, .centro {
+		width: 49%;
+		padding: 0.5%;
+		margin: 0;
+		float: left;
+	}
+	.direita {
+		width: 99%;
+		padding: 0.5%;
+		clear: both;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.esquerda, .centro, .direita {
+		width: 99%;
+		padding: 0.5%;
+		margin: 0;
+		float: none;
+	}
+	.topo {
+		height: 230px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.esquerda, .centro {
+		width: 99%;
+		padding: 0.5%;
+		margin: 0;
+		float: none;
+	}
+	.direita {
+		display: none;
+	}
+	.topo {
+		height: 150px;
+	}
+}
+
+.rodape { 
+	width: 100%; 
+	height: 45px; 
+	clear: both; 
+	float: none; 
+	background-color: #fff; 
+	text-align: center;
+	line-height: 40px;
+}
+
+span {
+	font-size: 0.7em;
+}
